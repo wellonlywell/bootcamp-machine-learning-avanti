@@ -6,7 +6,7 @@ Básico em Machine Learning — Atlântico Avanti
 
 ## Participante
 
-Well Sousa
+Well Christina Costa Sousa
 
 ## Tipo de atividade
 
