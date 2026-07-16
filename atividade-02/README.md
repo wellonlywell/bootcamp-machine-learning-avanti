@@ -1,36 +1,36 @@
-﻿# Atividade 02 â€” Python, VisualizaÃ§Ã£o e AnÃ¡lise de Dados
+# Atividade 02 — Python, Visualização e Análise de Dados
 
-**Curso:** BÃ¡sico em Machine Learning â€” AtlÃ¢ntico Avanti
+**Curso:** Básico em Machine Learning — Atlântico Avanti
 **Participante:** Well Christina Costa Sousa
 **Tipo:** Atividade somativa individual
 
-Esta pasta contÃ©m as respostas da Atividade 02. A atividade mistura exercÃ­cios de Python puro com exemplos simples de anÃ¡lise de dados usando pandas.
+Esta pasta contém as respostas da Atividade 02. A atividade mistura exercícios de Python puro com exemplos simples de análise de dados usando pandas.
 
-## OrganizaÃ§Ã£o dos arquivos
+## Organização dos arquivos
 
-- [questoes_python.py](questoes_python.py): respostas das questÃµes 1 a 5, usando funÃ§Ãµes, listas, `for` e `if`.
-- [analise_dados.py](analise_dados.py): exemplos executÃ¡veis das questÃµes 6 a 10 usando pandas.
-- [dados.csv](dados.csv): conjunto de dados pequeno criado para os exemplos, pois a atividade nÃ£o forneceu um arquivo CSV.
-- [requirements.txt](requirements.txt): dependÃªncia necessÃ¡ria para executar a anÃ¡lise com pandas.
+- [questoes_python.py](questoes_python.py): respostas das questões 1 a 5, usando funções, listas, `for` e `if`.
+- [analise_dados.py](analise_dados.py): exemplos executáveis das questões 6 a 10 usando pandas.
+- [dados.csv](dados.csv): conjunto de dados pequeno criado para os exemplos, pois a atividade não forneceu um arquivo CSV.
+- [requirements.txt](requirements.txt): dependência necessária para executar a análise com pandas.
 
-## QuestÃµes da atividade
+## Questões da atividade
 
-1. Escrever uma funÃ§Ã£o que receba uma lista de nÃºmeros e retorne outra lista com os nÃºmeros Ã­mpares.
-2. Escrever uma funÃ§Ã£o que receba uma lista de nÃºmeros e retorne outra lista com os nÃºmeros primos presentes.
-3. Escrever uma funÃ§Ã£o que receba duas listas e retorne outra lista com os elementos que estÃ£o presentes em apenas uma das listas.
-4. Encontrar o segundo maior valor diferente do maior em uma lista de nÃºmeros inteiros.
-5. Ordenar uma lista de tuplas com nome e idade pelo nome das pessoas em ordem alfabÃ©tica.
-6. Identificar e tratar outliers em uma coluna numÃ©rica usando desvio padrÃ£o ou quartis.
-7. Concatenar vÃ¡rios DataFrames por linhas ou colunas, mesmo com colunas diferentes.
+1. Escrever uma função que receba uma lista de números e retorne outra lista com os números ímpares.
+2. Escrever uma função que receba uma lista de números e retorne outra lista com os números primos presentes.
+3. Escrever uma função que receba duas listas e retorne outra lista com os elementos que estão presentes em apenas uma das listas.
+4. Encontrar o segundo maior valor diferente do maior em uma lista de números inteiros.
+5. Ordenar uma lista de tuplas com nome e idade pelo nome das pessoas em ordem alfabética.
+6. Identificar e tratar outliers em uma coluna numérica usando desvio padrão ou quartis.
+7. Concatenar vários DataFrames por linhas ou colunas, mesmo com colunas diferentes.
 8. Ler um arquivo CSV em um DataFrame e exibir as primeiras linhas.
-9. Selecionar uma coluna especÃ­fica e filtrar linhas com base em uma condiÃ§Ã£o.
+9. Selecionar uma coluna específica e filtrar linhas com base em uma condição.
 10. Lidar com valores ausentes, `NaN`, em um DataFrame.
 
-## SoluÃ§Ãµes em Python
+## Soluções em Python
 
-As cinco primeiras questÃµes estÃ£o no arquivo [questoes_python.py](questoes_python.py).
+As cinco primeiras questões estão no arquivo [questoes_python.py](questoes_python.py).
 
-Na questÃ£o 1, a funÃ§Ã£o percorre a lista e guarda apenas os nÃºmeros que nÃ£o sÃ£o divisÃ­veis por 2:
+Na questão 1, a função percorre a lista e guarda apenas os números que não são divisíveis por 2:
 
 ```python
 def numeros_impares(numeros):
@@ -43,7 +43,7 @@ def numeros_impares(numeros):
     return impares
 ```
 
-Na questÃ£o 2, foi criada uma funÃ§Ã£o auxiliar chamada `eh_primo(numero)`. Ela verifica se o nÃºmero Ã© menor que 2 e depois testa possÃ­veis divisores:
+Na questão 2, foi criada uma função auxiliar chamada `eh_primo(numero)`. Ela verifica se o número é menor que 2 e depois testa possíveis divisores:
 
 ```python
 def eh_primo(numero):
@@ -57,28 +57,28 @@ def eh_primo(numero):
     return True
 ```
 
-Depois, `numeros_primos(numeros)` usa essa funÃ§Ã£o para montar uma nova lista apenas com os primos.
+Depois, `numeros_primos(numeros)` usa essa função para montar uma nova lista apenas com os primos.
 
-Na questÃ£o 3, a funÃ§Ã£o compara duas listas e retorna somente os elementos que aparecem em uma delas, evitando repetir valores no resultado:
+Na questão 3, a função compara duas listas e retorna somente os elementos que aparecem em uma delas, evitando repetir valores no resultado:
 
 ```python
 if elemento not in lista2 and elemento not in exclusivos:
     exclusivos.append(elemento)
 ```
 
-Na questÃ£o 4, a funÃ§Ã£o monta uma lista de valores Ãºnicos, ordena em ordem decrescente e retorna o segundo item. Se nÃ£o existirem dois valores diferentes, retorna `None`.
+Na questão 4, a função monta uma lista de valores únicos, ordena em ordem decrescente e retorna o segundo item. Se não existirem dois valores diferentes, retorna `None`.
 
-Na questÃ£o 5, a ordenaÃ§Ã£o Ã© feita pelo nome da pessoa, ignorando diferenÃ§as entre letras maiÃºsculas e minÃºsculas:
+Na questão 5, a ordenação é feita pelo nome da pessoa, ignorando diferenças entre letras maiúsculas e minúsculas:
 
 ```python
 return sorted(pessoas, key=lambda pessoa: pessoa[0].lower())
 ```
 
-## SoluÃ§Ãµes com pandas
+## Soluções com pandas
 
-As questÃµes 6 a 10 estÃ£o no arquivo [analise_dados.py](analise_dados.py).
+As questões 6 a 10 estão no arquivo [analise_dados.py](analise_dados.py).
 
-Na questÃ£o 6, foi criado um DataFrame com a coluna `tempo_atendimento`. Um valor muito alto foi incluÃ­do para representar um possÃ­vel outlier. O script calcula os limites usando quartis e IQR:
+Na questão 6, foi criado um DataFrame com a coluna `tempo_atendimento`. Um valor muito alto foi incluído para representar um possível outlier. O script calcula os limites usando quartis e IQR:
 
 ```python
 q1 = atendimentos["tempo_atendimento"].quantile(0.25)
@@ -87,39 +87,39 @@ iqr = q3 - q1
 limite_superior = q3 + 1.5 * iqr
 ```
 
-Nesse exemplo, o mÃ©todo IQR identifica o valor `120` como possÃ­vel outlier. O programa tambÃ©m mostra limites usando mÃ©dia e trÃªs desvios-padrÃ£o, mas esse segundo mÃ©todo pode nÃ£o identificar o valor `120` nessa amostra. MÃ©todos diferentes podem apresentar resultados diferentes, por isso um valor suspeito nÃ£o deve ser removido automaticamente sem anÃ¡lise do contexto dos dados.
+Nesse exemplo, o método IQR identifica o valor `120` como possível outlier. O programa também mostra limites usando média e três desvios-padrão, mas esse segundo método pode não identificar o valor `120` nessa amostra. Métodos diferentes podem apresentar resultados diferentes, por isso um valor suspeito não deve ser removido automaticamente sem análise do contexto dos dados.
 
-Na questÃ£o 7, dois DataFrames com colunas diferentes sÃ£o concatenados com `pd.concat()`. Quando a concatenaÃ§Ã£o Ã© feita por linhas com `axis=0`, as colunas que nÃ£o existem em um dos DataFrames aparecem com `NaN`. Quando Ã© feita por colunas com `axis=1`, os DataFrames sÃ£o colocados lado a lado.
+Na questão 7, dois DataFrames com colunas diferentes são concatenados com `pd.concat()`. Quando a concatenação é feita por linhas com `axis=0`, as colunas que não existem em um dos DataFrames aparecem com `NaN`. Quando é feita por colunas com `axis=1`, os DataFrames são colocados lado a lado.
 
-Na questÃ£o 8, o arquivo [dados.csv](dados.csv) Ã© lido com pandas. O caminho foi montado com `pathlib.Path` e `__file__`, assim o programa funciona mesmo quando executado a partir da raiz do repositÃ³rio:
+Na questão 8, o arquivo [dados.csv](dados.csv) é lido com pandas. O caminho foi montado com `pathlib.Path` e `__file__`, assim o programa funciona mesmo quando executado a partir da raiz do repositório:
 
 ```python
 caminho_csv = Path(__file__).parent / "dados.csv"
 dados = pd.read_csv(caminho_csv)
 ```
 
-Na questÃ£o 9, o script seleciona a coluna `nome` e filtra pessoas com idade maior ou igual a 18:
+Na questão 9, o script seleciona a coluna `nome` e filtra pessoas com idade maior ou igual a 18:
 
 ```python
 nomes = dados["nome"]
 maiores_de_idade = dados[dados["idade"] >= 18]
 ```
 
-Na questÃ£o 10, o script mostra valores ausentes usando `isna()` e `isna().sum()`. TambÃ©m demonstra `dropna()` e faz preenchimentos em uma cÃ³pia do DataFrame:
+Na questão 10, o script mostra valores ausentes usando `isna()` e `isna().sum()`. Também demonstra `dropna()` e faz preenchimentos em uma cópia do DataFrame:
 
 ```python
 dados_preenchidos = dados.copy()
 dados_preenchidos["idade"] = dados_preenchidos["idade"].fillna(mediana_idade)
-dados_preenchidos["cidade"] = dados_preenchidos["cidade"].fillna("NÃ£o informado")
+dados_preenchidos["cidade"] = dados_preenchidos["cidade"].fillna("Não informado")
 ```
 
-Neste exemplo, optei por usar o marcador `NÃ£o informado` em vez de preencher a cidade com a moda. Essa escolha preserva a informaÃ§Ã£o de que o dado original estava ausente e evita atribuir automaticamente uma cidade que pode nÃ£o corresponder Ã  realidade.
+Neste exemplo, optei por usar o marcador `Não informado` em vez de preencher a cidade com a moda. Essa escolha preserva a informação de que o dado original estava ausente e evita atribuir automaticamente uma cidade que pode não corresponder à realidade.
 
-Valores ausentes tambÃ©m nÃ£o devem ser tratados automaticamente sem analisar o contexto. Ã€s vezes eles indicam erro de coleta; em outras situaÃ§Ãµes, podem carregar uma informaÃ§Ã£o importante.
+Valores ausentes também não devem ser tratados automaticamente sem analisar o contexto. Às vezes eles indicam erro de coleta; em outras situações, podem carregar uma informação importante.
 
 ## Sobre o arquivo CSV
 
-O arquivo [dados.csv](dados.csv) foi criado como conjunto de dados de exemplo, porque a atividade nÃ£o forneceu um CSV pronto.
+O arquivo [dados.csv](dados.csv) foi criado como conjunto de dados de exemplo, porque a atividade não forneceu um CSV pronto.
 
 Ele possui as colunas:
 
@@ -128,13 +128,13 @@ Ele possui as colunas:
 - `cidade`
 - `tempo_atendimento`
 
-O arquivo inclui pessoas maiores e menores de idade, valores ausentes em `idade` e `cidade`, e um valor alto em `tempo_atendimento` para servir como possÃ­vel outlier.
+O arquivo inclui pessoas maiores e menores de idade, valores ausentes em `idade` e `cidade`, e um valor alto em `tempo_atendimento` para servir como possível outlier.
 
-## Como instalar as dependÃªncias
+## Como instalar as dependências
 
-Execute o comando abaixo a partir da raiz do repositÃ³rio:
+Execute o comando abaixo a partir da raiz do repositório:
 
-Ã‰ necessÃ¡rio ter Python 3 instalado para executar os comandos.
+É necessário ter Python 3 instalado para executar os comandos.
 
 ```bash
 python -m pip install -r atividade-02/requirements.txt
@@ -142,13 +142,13 @@ python -m pip install -r atividade-02/requirements.txt
 
 ## Como executar os programas
 
-Para executar as questÃµes 1 a 5:
+Para executar as questões 1 a 5:
 
 ```bash
 python atividade-02/questoes_python.py
 ```
 
-Para executar as questÃµes 6 a 10:
+Para executar as questões 6 a 10:
 
 ```bash
 python atividade-02/analise_dados.py
