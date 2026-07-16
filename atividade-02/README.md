@@ -1,8 +1,16 @@
 # Atividade 02 — Python, Visualização e Análise de Dados
 
-**Curso:** Básico em Machine Learning — Atlântico Avanti
-**Participante:** Well Christina Costa Sousa
-**Tipo:** Atividade somativa individual
+## Curso
+
+Básico em Machine Learning — Atlântico Avanti
+
+## Participante
+
+Well Christina Costa Sousa
+
+## Tipo de atividade
+
+Atividade somativa individual.
 
 Esta pasta contém as respostas da Atividade 02. A atividade mistura exercícios de Python puro com exemplos simples de análise de dados usando pandas.
 
