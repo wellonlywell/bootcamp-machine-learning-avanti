@@ -1,6 +1,6 @@
-# Bootcamp Basico em Machine Learning
+# Bootcamp Básico em Machine Learning
 
-Repositorio destinado as atividades do curso Basico em Machine Learning do Atlantico Avanti.
+Repositório destinado às atividades do curso Básico em Machine Learning do Atlântico Avanti.
 
 ## Participante
 
@@ -8,16 +8,21 @@ Well Christina Costa Sousa
 
 ## Atividades
 
-| Atividade | Status | Link |
-|---|---|---|
-| Atividade 01 | Concluida | [atividade-01/](https://github.com/wellonlywell/bootcamp-machine-learning-avanti/tree/atividade-01/atividade-01) |
-| Atividade 02 | Concluida | [atividade-02/](https://github.com/wellonlywell/bootcamp-machine-learning-avanti/tree/atividade-02/atividade-02) |
-| Atividade 03 | Pendente | [atividade-03/](https://github.com/wellonlywell/bootcamp-machine-learning-avanti/tree/atividade-03/atividade-03) |
-| Atividade 04 | Pendente | [atividade-04/](https://github.com/wellonlywell/bootcamp-machine-learning-avanti/tree/atividade-04/atividade-04) |
-| Atividade 05 | Pendente | [atividade-05/](https://github.com/wellonlywell/bootcamp-machine-learning-avanti/tree/atividade-05/atividade-05) |
+O bootcamp tem 4 atividades. As atividades 01 e 02 são individuais e têm entrega em repositório. A atividade 03 é individual, mas é avaliada por presença e participação (não tem entrega de repositório). A atividade 04 é em grupo e tem entrega em repositório.
 
-## Organizacao do repositorio
+| Atividade | Tipo | Status | Link |
+|---|---|---|---|
+| Atividade 01 | Individual - Diagnóstica | Concluída | [atividade-01/](https://github.com/wellonlywell/bootcamp-machine-learning-avanti/tree/atividade-01/atividade-01) |
+| Atividade 02 | Individual - Somativa | Concluída | [atividade-02/](https://github.com/wellonlywell/bootcamp-machine-learning-avanti/tree/atividade-02/atividade-02) |
+| Atividade 03 | Individual - Formativa | Sem entrega de repositório (presença + participação semanal) | — |
+| Atividade 04 | Grupo - Somativa (Projeto 02 - Classificação de Frutas) | Em andamento - ET-03 | [atividade-04/](https://github.com/wellonlywell/bootcamp-machine-learning-avanti/tree/atividade-04/atividade-04) |
 
-- Cada atividade tem sua propria branch e sua propria pasta dentro dela.
-- Cada branch contem apenas a pasta da sua atividade.
-- A branch main funciona como indice do repositorio.
+## Demoday
+
+Apresentação final em 22/08.
+
+## Organização do repositório
+
+- Cada atividade que tem entrega em repositório possui sua própria branch e pasta correspondente.
+- Cada branch contém apenas a pasta da sua atividade.
+- A branch main funciona como índice do repositório.
